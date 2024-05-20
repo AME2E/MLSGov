@@ -1,0 +1,47 @@
+[package]
+edition = "2021"
+name = "corelib"
+version = "0.1.0"
+
+[features]
+baseline = []
+default = ["gov"]
+gov = []
+
+[dependencies]
+actix-rt = "*"
+axum = { version = "0.6.10", features = ["ws"] }
+clap = { version = "4.0.18", features = ["derive"] }
+dashmap = { version = "5.4.0", features = ["serde"] }
+ed25519-dalek = { git = "https://github.com/dalek-cryptography/ed25519-dalek", branch = "main", features = ["serde"] }
+futures = "0.3.21"
+log = "0.4.17"
+openmls = { git = "https://github.com/ajnam12/openmls-fork", rev = "dc8c871" }
+openmls_rust_crypto = { git = "https://github.com/ajnam12/openmls-fork", rev = "dc8c871" }
+openmls_traits = { git = "https://github.com/ajnam12/openmls-fork", rev = "dc8c871" }
+rand = "0.8.5"
+rand_07 = { package = "rand", version = "0.7" }
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0.137"
+serde_json = "1.0"
+serde_json_any_key = "2.0.0"
+serde_with = "2.0.0"
+thiserror = "1.0.38"
+tls_codec = { version = "0.2.0", features = ["derive", "serde_serialize", "mls"] }
+tls_codec_derive = "0.2.0"
+typetag = "0.2"
+uuid = { version = "1.2.2", features = ["v4", "fast-rng", "macro-diagnostics"] }
+versions = "4.1.0"
+
+[dev-dependencies]
+mockall = "0.11.3"
+
+[[bench]]
+harness = false
+name = "mod"
+path = "src/benches/mod.rs"
+
+[[bench]]
+harness = false
+name = "vote_bench"
+path = "src/benches/vote_bench.rs"

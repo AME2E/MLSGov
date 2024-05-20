@@ -1,0 +1,6 @@
+---
+ds_url_str: "ws://localhost:3000/"
+as_url_str: "ws://localhost:2000/"
+new_key_packages_per_sync: 5
+data_path: "./ClientData.yaml"
+keystore_path: "./ClientKeyStore.yaml"

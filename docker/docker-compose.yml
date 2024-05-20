@@ -1,0 +1,12 @@
+version: '1.0'
+
+services:
+  ds:
+    build:
+      dockerfile: Dockerfile
+      args:
+        - SSH_KEY_MLS_GOV=$SSH_KEY_MLS_GOV
+        - SSH_KEY_MLS_FORK=$SSH_KEY_MLS_FORK
+    ports:
+      - "127.0.0.1:2000:2000"
+      - "127.0.0.1:3000:3000"

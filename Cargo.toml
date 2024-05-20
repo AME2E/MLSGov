@@ -1,0 +1,10 @@
+[workspace]
+members = [
+  "corelib",
+  "client",
+  "delivery_service",
+  "authentication_service",
+]
+
+[patch.crates-io.tls_codec]
+git = "https://github.com/RustCrypto/formats.git"
