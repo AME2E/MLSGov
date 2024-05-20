@@ -1,8 +1,9 @@
-# `animated-adventure`: composable, end-to-end encrypted messaging for research
-
+# `MLS Gov`: composable, end-to-end encrypted messaging for governance research
 ![](https://img.shields.io/badge/-experimental%20code-red)
 [![](https://img.shields.io/badge/License-Apache_2.0-blue)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Rust](https://github.com/sgmenda/animated-adventure/actions/workflows/rust.yml/badge.svg)](https://github.com/sgmenda/animated-adventure/actions/workflows/rust.yml)
+
+**Code for [Private Hierarchical Governance for Encrypted Messaging](https://www.computer.org/csdl/proceedings-article/sp/2024/313000a255/1WPcZc6gTLy)** (S&P 2024)
 
 ## Security (Or Lack Thereof)
 
